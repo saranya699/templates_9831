@@ -34,6 +34,27 @@
                                 </div>
                             </div>
                         </div>
+                        <div id="icrvgp" class="cell gpd-clm" *ngIf="isApplicable('savedtemplate') && userId">
+                            <div id="i6vd27" class="gdp-row gpd-grid" *ngIf="isApplicable('savedtemplate') && userId">
+                                <div id="inlo1l" class="cell gpd-clm" *ngIf="isApplicable('savedtemplate') && userId"> <i id="iyxitk" class="fa fa-folder-open" aria-hidden="true"></i>
+
+                                </div>
+                                <div id="iytw4t" class="cell gpd-clm" *ngIf="isApplicable('savedtemplate') && userId"> <a id="i9imej" class="gpd-text" href="#template" data-toggle="collapse"
+                                    data-parent="#MainMenu">template <i class="fa fa-caret-down"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse" id="template">
+                            <div id="icrvgp" class="cell gpd-clm">
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm">
+<a id="i9imej" class="gpd-text" [routerLink]="['/savedtemplate']">{{'source.savedtemplate' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div id="icrvgp" class="cell gpd-clm" *ngIf='userId!=null'>
                             <div id="i6vd27" class="gdp-row gpd-grid" *ngIf='userId!=null'>
                                 <div id="inlo1l" class="cell gpd-clm" *ngIf='userId!=null'> <i id="iyxitk" class="fa fa-sign-out" aria-hidden="true"></i>

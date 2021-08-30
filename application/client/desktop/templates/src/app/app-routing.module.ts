@@ -24,6 +24,7 @@ const routes: Routes = [
        { path: '', component: TemplateComponent, pathMatch: 'full'   } ,
 { path: 'admin', component: AdminComponent, canActivate: [AuthGuard] },
 
+{ path : 'savedtemplate', loadChildren: () => import('./savedtemplate/savedtemplate.module').then(m => m.SavedtemplateModule), canActivate: [AuthGuard] } , 
 ];
 
 @NgModule({
